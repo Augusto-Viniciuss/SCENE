@@ -8,6 +8,10 @@ Reusable instructions for academic videos that explain a method, show demonstrat
 
 This repository is a documentation kit and an agent skill. It contains no papers, recordings, examples from real research, or custom rendering engine.
 
+![SCENE workflow: research inputs, story and script, method in SVG, demonstrations and results, and a narrated video.](docs/media/scene-workflow.gif)
+
+*An illustrative workflow built with generic graphics; no research data is shown.*
+
 ## Which file does what?
 
 | File | Purpose |
@@ -252,3 +256,13 @@ Alongside the HyperFrames-generated files, maintain:
 Version only generic instructions and templates. Before publishing, inspect `git status`, staged files, and history. This kit does not configure remotes or publish content automatically.
 
 External references belong to their respective projects; their licenses and distribution requirements are independent of this kit.
+
+## Regenerate the README animation
+
+The GIF is already included; rebuilding it is optional. Its source uses Python 3's standard library and an FFmpeg build with the `librsvg` decoder, plus FFprobe. No Python packages or model downloads are needed. Run from the kit root:
+
+```bash
+python3 scripts/build_readme_gif.py
+```
+
+The builder generates only the generic documentation illustration and checks its dimensions, frame count, duration, and file size. It does not render research projects.

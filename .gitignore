@@ -19,6 +19,7 @@
 *.jpg
 *.jpeg
 *.webp
+*.gif
 *.svg
 *.zip
 
@@ -34,3 +35,6 @@ graphify-out/
 .mcp.json
 *.log
 .DS_Store
+
+# The generic documentation illustration is intentionally shareable.
+!/docs/media/scene-workflow.gif

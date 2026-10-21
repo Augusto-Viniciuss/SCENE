@@ -8,6 +8,10 @@ Instruções reutilizáveis para produzir vídeos acadêmicos com explicação d
 
 Este é um kit de documentação e uma skill. Não contém artigos, gravações, exemplos de pesquisas reais ou um renderizador próprio.
 
+![Fluxo do SCENE: materiais de pesquisa, roteiro, método em SVG, demonstrações e resultados, e vídeo narrado.](docs/media/scene-workflow.gif)
+
+*Fluxo ilustrativo feito com gráficos genéricos; nenhum dado de pesquisa é exibido.*
+
 ## Qual arquivo faz o quê?
 
 | Arquivo | Função |
@@ -252,3 +256,13 @@ Além dos arquivos gerados pelo HyperFrames, mantenha:
 Versione apenas instruções e modelos genéricos. Antes de publicar, confira `git status`, os arquivos preparados para commit e o histórico. Este kit não configura remotos nem publica conteúdo automaticamente.
 
 As referências externas pertencem aos respectivos projetos; suas licenças e requisitos de distribuição são independentes deste kit.
+
+## Regenerar a animação do README
+
+O GIF já está incluído; regenerá-lo é opcional. Seu código usa a biblioteca padrão do Python 3, FFmpeg com o decodificador `librsvg` e FFprobe. Não precisa de pacotes Python nem de modelos adicionais. Execute na raiz do kit:
+
+```bash
+python3 scripts/build_readme_gif.py
+```
+
+O gerador produz apenas a ilustração genérica da documentação e confere dimensões, número de quadros, duração e tamanho do arquivo. Ele não renderiza projetos de pesquisa.
