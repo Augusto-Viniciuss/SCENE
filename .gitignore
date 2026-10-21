@@ -1,0 +1,36 @@
+# Production work is private to each article.
+/work/
+
+# Research documents and media are not examples for this kit.
+*.pdf
+*.tex
+*.bib
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.webm
+*.wav
+*.mp3
+*.m4a
+*.flac
+*.ogg
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.svg
+*.zip
+
+# Local dependencies, caches and credentials.
+node_modules/
+.venv/
+__pycache__/
+.hyperframes/
+.media/
+graphify-out/
+.env
+.env.*
+.mcp.json
+*.log
+.DS_Store

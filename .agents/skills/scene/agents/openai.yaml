@@ -1,0 +1,4 @@
+interface:
+  display_name: "SCENE"
+  short_description: "Academic video workflow for AI coding agents"
+  default_prompt: "Use $scene to create an academic research video from the supplied paper and experiment recordings."
